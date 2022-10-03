@@ -22,9 +22,7 @@ def inputfloat(mensaje):
 # Ejercicio 1
 def calcular_nota(totalRespuestas,aciertos,errores):
     nota = aciertos*10/totalRespuestas-errores*10/(50-totalRespuestas)
-    if nota < 0:
-        nota = 0
-    return nota
+    return max(nota, 0)
 
 
 # Ejercicio 2

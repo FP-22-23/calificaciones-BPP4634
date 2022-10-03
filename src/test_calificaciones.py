@@ -4,7 +4,7 @@ def main():
 
 # Ejercicio 1
     # Apartado a
-    notaAda = print("Ada ha sacado un", calcular_nota(30,23,3))
+    notaAda = print("Ada ha sacado un", calcular_nota(27,23,3))
 
     # Apartado b y c
     nombreal = input("Introduzca el nombre del alumno/a: ")
