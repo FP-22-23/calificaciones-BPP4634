@@ -10,7 +10,11 @@ def inputfloat(mensaje):
     while True:
         res = input(mensaje)
         try:
-            return float(res)
+            res = float(res)
+            if 0 <= res <= 10:
+                return float(res)
+            else:
+                print("Por favor, introduzca un número válido.")
         except ValueError:
             print("Por favor, introduzca un número válido.")
 
