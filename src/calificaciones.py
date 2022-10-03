@@ -1,3 +1,20 @@
+def inputint(mensaje):
+    while True:
+        res = input(mensaje)
+        try:
+            return int(res)
+        except ValueError:
+            print("Por favor, introduzca un número válido.")
+        
+def inputfloat(mensaje):
+    while True:
+        res = input(mensaje)
+        try:
+            return float(res)
+        except ValueError:
+            print("Por favor, introduzca un número válido.")
+
+
 # Ejercicio 1
 def calcular_nota(totalRespuestas,aciertos,errores):
     nota = aciertos*10/totalRespuestas-errores*10/(50-totalRespuestas)
